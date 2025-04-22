@@ -24,10 +24,10 @@ metros_quadrados_mais_dez = metros_quadrados * 1.0
 rendimento_litro = 6
 litros_lata = 18
 preco_lata = 80
-rendimento_lata = rendimento_litro * litros_lata
+rendimento_lata = rendimento_litro * litros_lata # 108
 litros_galao = 3.6
 preco_galao = 25
-rendimento_galao = rendimento_litro * litros_galao
+rendimento_galao = rendimento_litro * litros_galao # 21.6
 
 somente_latas = math.ceil(metros_quadrados / rendimento_lata)
 somente_galoes = math.ceil(metros_quadrados / rendimento_galao)
