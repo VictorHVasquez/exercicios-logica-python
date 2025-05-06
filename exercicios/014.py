@@ -35,7 +35,7 @@ class Peixe:
 
     def show(self):
         print('Peso Limite SP: ', Peixe.regulamentoPesoSP, 'Valor multa por KG excedente SP: ', Peixe.multa, 'Peso medido: ', self.pesoPescado)
-    
+
     def calcula_multa(self):
         if self.pesoPescado > Peixe.regulamentoPesoSP:
             excedente = self.pesoPescado - Peixe.regulamentoPesoSP
@@ -52,11 +52,14 @@ class Peixe:
         cls.multa = novo_valor_multa
 
 p0 = Peixe(float(input('Digite o peso de peixes: ')))
-Peixe.show(p0)
-Peixe.mudar_limite_regulamento_sp(float(60))
-Peixe.show(p0)
-Peixe.mudar_valor_multa_sp(float(6))
-Peixe.show(p0)
-Peixe.calcula_multa(p0)
+p0.show()
+Peixe.mudar_limite_regulamento_sp(60)
+p0.show()
+Peixe.mudar_valor_multa_sp(6)
+p0.show()
+p0.calcula_multa()
+p1 = Peixe(float(input('Digite o peso de peixes: ')))
+p1.show()
+p1.calcula_multa()
 
 
